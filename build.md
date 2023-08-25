@@ -45,5 +45,16 @@ eas login
 },
 
 # 4. create a build for the device
+# for development
 eas build --profile development --platform android
+
+# for preview
+eas build --profile preview --platform android
+
+#=================================================================================
+# login to aws
+ssh -i "key.pem" ec2-user@ec2-54-152-125-86.compute-1.amazonaws.com
+
+# scp a local file to aws ec2
+scp -i "key.pem" leling-tech.apk ec2-user@ec2-54-152-125-86.compute-1.amazonaws.com:~/.
 ```
