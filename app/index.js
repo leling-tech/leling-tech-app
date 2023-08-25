@@ -109,9 +109,16 @@ const styles = StyleSheet.create({
   },
   footer: {
     position: "absolute",
-    bottom: 16,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    width: "100%",
+    textAlign: "center",
+    paddingVertical: 16,
     display: "flex",
     flexDirection: "row",
+    justifyContent: "center",
+    backgroundColor: "#fff",
   },
   footerText: {
     marginHorizontal: 8,
